@@ -12,10 +12,10 @@
     "Spa room (indoor)",
     "Laundry in spa room",
     "Four smart TVs (85” lounge)",
-    "Queen TV bed (voice control separate)",
+    "Queen TV bed (not via Google; separate controls)",
     "Two single electric lift beds",
     "Motion-sensor taps in every sink",
-    "Back verandah with BBQ & rotisserie (voice controls indoors only)",
+    "Back verandah with BBQ & rotisserie (not voice-controlled; verandah light voice commands usable indoors only)",
     "Free driveway parking",
     "Pet area (up to 2 pets)"
   ],
@@ -37,45 +37,37 @@
     "Lucci/Addtam bedside power boards are for charging only. Plug hair dryers into wall outlets.",
     "Do not manually move electric recliners."
   ],
-  "wifi": {
-    "ssid": "Provided after booking",
-    "password": "Provided after booking"
-  },
-  "manual": {
-    "url": "/manuals/palace-house-manual.pdf",
-    "access": "Provided after booking"
-  },
+  "wifi": { "ssid": "Provided after booking", "password": "Provided after booking" },
+  "manual": { "url": "/manuals/palace-house-manual.pdf", "access": "Provided after booking" },
   "emergency": {
-    "contacts": "Stuart Schmidt & Lina Sun",
-    "phones": "0414 366 815, 0412 188 947",
+    "contacts": ["Stuart Schmidt", "Lina Sun"],
+    "phones": ["0414366815", "0412188947"],
     "hospital": "Katoomba, NSW 2780"
   },
-  "booking": {
-    "stripe_payment_link": ""
-  },
+  "booking": { "stripe_payment_link": "" },
   "gallery": [
-    { "src": "/img/palace/palace%206%20person%20private%20spa%2C%20spa%20room.JPG", "alt": "Private spa room with 6-person spa and mood lighting." },
-    { "src": "/img/palace/palace%20back%20entrance%20.jpg", "alt": "Back entrance with easy no-step access." },
-    { "src": "/img/palace/palace%20back%20veranda%20bbq%20wood%20fire%20slow%20cooker.jpg", "alt": "Back verandah with BBQ and wood fire slow cooker." },
-    { "src": "/img/palace/palace%20coffee%20kitchen%20dining.JPG", "alt": "Kitchen coffee station and dining table setup." },
-    { "src": "/img/palace/palace%20court%20yard%20fire%20pit%20back%20garden.jpg", "alt": "Courtyard fire pit in the landscaped back garden." },
-    { "src": "/img/palace/palace%20dining%20kitchen%20table%20for%206.JPG", "alt": "Dining table set for six guests beside the kitchen." },
-    { "src": "/img/palace/palace%20dog%20play%20area.jpg", "alt": "Fenced dog play area for pets." },
-    { "src": "/img/palace/palace%20drone%20view%202.JPG", "alt": "Drone view of the Wollemi Smart Palace and gardens." },
-    { "src": "/img/palace/palace%20endagered%20wollemi%20pine%20trees%20back%20garden.jpg", "alt": "Rare endangered Wollemi pine trees in the back garden." },
-    { "src": "/img/palace/palace%20fire%20court%20yard.JPG", "alt": "Cosy fire court yard for outdoor evenings." },
-    { "src": "/img/palace/palace%20front%20.jpg", "alt": "Front view of the Wollemi Smart Palace." },
-    { "src": "/img/palace/palace%20jester%20room%20bed%202.jpg", "alt": "The Jester Room with twin electric lift beds and smart TV." },
-    { "src": "/img/palace/palace%20jesters%20room%20bed%201.jpg", "alt": "The Jester Room second bed with colourful bedding." },
-    { "src": "/img/palace/palace%20king%20room%20king%20bed.jpg", "alt": "King bedroom with large bed and smart curtain controls." },
-    { "src": "/img/palace/palace%20king%20room.jpg", "alt": "Another view of the king bedroom with smart lighting." },
-    { "src": "/img/palace/palace%20kitchen%20and%20dining.jpg", "alt": "Open-plan kitchen and dining with modern appliances." },
-    { "src": "/img/palace/palace%20queen%20bedroom%20tv%20bed.jpg", "alt": "Queen bedroom with TV bed raised." },
-    { "src": "/img/palace/palace%20queen%20room%20tv%20bed%20closed.jpg", "alt": "Queen bedroom with TV bed closed." },
-    { "src": "/img/palace/palace%20spa%20rules%20spa%20room.JPG", "alt": "Spa room with posted spa rules for guests." },
-    { "src": "/img/palace/palace%20spa%20washing%20machine%20and%20dryer%20combo%20spa%20room.jpg", "alt": "Laundry facilities in the spa room: washer-dryer combo." },
-    { "src": "/img/palace/palace%20wally%20the%20sauras%20garden.JPG", "alt": "Garden feature with 'Wally the Saurus' dinosaur statue." },
-    { "src": "/img/palace/palace%20wood%20fire%20slow%20cooker%20veranda.JPG", "alt": "Back verandah with wood fire slow cooker in use." },
-    { "src": "/img/palace/palace%20wood%20fire%20slow%20cooker.JPG", "alt": "Close-up of wood fire slow cooker." }
+    { "src": "/img/palace/palace-6-person-private-spa-spa-room.jpg", "alt": "Private spa room with 6-person spa and mood lighting." },
+    { "src": "/img/palace/palace-back-entrance.jpg", "alt": "Back entrance with easy no-step access." },
+    { "src": "/img/palace/palace-back-verandah-bbq-wood-fire-slow-cooker.jpg", "alt": "Back verandah with BBQ and wood fire slow cooker." },
+    { "src": "/img/palace/palace-coffee-kitchen-dining.jpg", "alt": "Kitchen coffee station and dining table setup." },
+    { "src": "/img/palace/palace-courtyard-fire-pit-back-garden.jpg", "alt": "Courtyard fire pit in the landscaped back garden." },
+    { "src": "/img/palace/palace-dining-kitchen-table-for-6.jpg", "alt": "Dining table set for six guests beside the kitchen." },
+    { "src": "/img/palace/palace-dog-play-area.jpg", "alt": "Fenced dog play area for pets." },
+    { "src": "/img/palace/palace-drone-view-2.jpg", "alt": "Drone view of the Wollemi Smart Palace and gardens." },
+    { "src": "/img/palace/palace-endangered-wollemi-pine-trees-back-garden.jpg", "alt": "Rare endangered Wollemi pine trees in the back garden." },
+    { "src": "/img/palace/palace-fire-courtyard.jpg", "alt": "Cosy fire courtyard for outdoor evenings." },
+    { "src": "/img/palace/palace-front.jpg", "alt": "Front view of the Wollemi Smart Palace." },
+    { "src": "/img/palace/palace-jester-room-bed-2.jpg", "alt": "The Jester Room with twin electric lift beds and smart TV." },
+    { "src": "/img/palace/palace-jester-room-bed-1.jpg", "alt": "The Jester Room second bed with colourful bedding." },
+    { "src": "/img/palace/palace-king-room-king-bed.jpg", "alt": "King bedroom with large bed and smart curtain controls." },
+    { "src": "/img/palace/palace-king-room.jpg", "alt": "Another view of the king bedroom with smart lighting." },
+    { "src": "/img/palace/palace-kitchen-and-dining.jpg", "alt": "Open-plan kitchen and dining with modern appliances." },
+    { "src": "/img/palace/palace-queen-bedroom-tv-bed.jpg", "alt": "Queen bedroom with TV bed raised." },
+    { "src": "/img/palace/palace-queen-room-tv-bed-closed.jpg", "alt": "Queen bedroom with TV bed closed." },
+    { "src": "/img/palace/palace-spa-rules-spa-room.jpg", "alt": "Spa room with posted spa rules for guests." },
+    { "src": "/img/palace/palace-spa-washing-machine-and-dryer-combo-spa-room.jpg", "alt": "Laundry facilities in the spa room: washer-dryer combo." },
+    { "src": "/img/palace/palace-wally-the-saurus-garden.jpg", "alt": "Garden feature with 'Wally the Saurus' dinosaur statue." },
+    { "src": "/img/palace/palace-wood-fire-slow-cooker-verandah.jpg", "alt": "Back verandah with wood fire slow cooker in use." },
+    { "src": "/img/palace/palace-wood-fire-slow-cooker.jpg", "alt": "Close-up of wood fire slow cooker." }
   ]
 }
