@@ -1,0 +1,70 @@
+{
+  "name": "The Wollemi Smart Palace",
+  "slug": "wollemi-smart-palace",
+  "short_description": "One-story, no-step entry. Honeymoon-ready smart haven with spa room, mood lighting, and rare Wollemi pines.",
+  "long_description": "The Wollemi Smart Palace blends Blue Mountains tranquility with playful, voice-driven comfort. Control showers, lighting, curtains, and more from bed. Please admire the nine Wollemi pines from the paths\u2014garden beds are off-limits to protect these endangered trees.",
+  "location": "Katoomba, Blue Mountains \u00b7 NSW",
+  "capacity": 6,
+  "bedrooms": "3 bedrooms (1 king, 1 queen, 2 singles)",
+  "bathrooms": "2 ensuites",
+  "parking": "Driveway (free)",
+  "amenities": [
+    "Spa room (indoor)",
+    "Laundry in spa room",
+    "Four smart TVs (85\u201d lounge)",
+    "Queen TV bed (voice control separate)",
+    "Two single electric lift beds",
+    "Motion-sensor taps in every sink",
+    "Back verandah with BBQ & rotisserie (voice controls indoors only)",
+    "Free driveway parking",
+    "Pet area (up to 2 pets)"
+  ],
+  "smart_features": [
+    "Google Minis in each room",
+    "Voice-controlled showers (King/Queen ensuites: on/off)",
+    "Voice-controlled curtains in King room",
+    "Mood lighting presets in spa room",
+    "Coloured path lighting in gardens (no garden bed access)",
+    "Lights, blinds, scenes per room",
+    "Sample commands: \u201cHey Google, turn on King Shower\u201d, \u201cHey Google, open the curtains\u201d"
+  ],
+  "house_rules": [
+    "Strictly 6 guests; no additional visitors (external cameras monitor guest numbers).",
+    "No parties. Quiet hours 10 PM\u20138 AM.",
+    "Smoking outdoors only\u2014use ashtrays.",
+    "Spa & BBQ must be off and covered when not in use and at checkout.",
+    "Do not unplug devices; keep remotes in original locations.",
+    "Lucci/Addtam bedside power boards are for charging only. Plug hair dryers into wall outlets.",
+    "Do not manually move electric recliners."
+  ],
+  "wifi": {
+    "ssid": "Wally's house",
+    "password": "meet wally"
+  },
+  "emergency": {
+    "contacts": "Stuart Schmidt & Lina Sun",
+    "phones": "0414 366 815, 0412 188 947",
+    "hospital": "Katoomba, NSW 2780"
+  },
+  "booking": {
+    "stripe_payment_link": ""
+  },
+  "gallery": [
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=Wollemi+Lounge+85in+TV",
+      "alt": "Lounge with 85-inch smart TV"
+    },
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=Spa+Room+Mood+Lighting",
+      "alt": "Spa room with mood lighting"
+    },
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=King+Ensuite+Shower",
+      "alt": "King ensuite with voice-controlled shower"
+    },
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=Garden+Lighting+Trail",
+      "alt": "Coloured garden lighting along paths"
+    }
+  ]
+}

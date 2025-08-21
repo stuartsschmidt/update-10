@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Direct – Blue Mountains Smart Homes</title>
+<meta name="description" content="Smart-tech stays in the Blue Mountains: Wollemi Smart Palace & The Smart Retreat. Voice-controlled lighting, showers, curtains, spa room, and more. Book direct.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/styles.css">
+<meta property="og:title" content="Book Direct – Blue Mountains Smart Homes">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://placehold.co/1200x630/png">
+<meta property="og:description" content="Smart-tech stays in the Blue Mountains: Wollemi Smart Palace & The Smart Retreat.">
+<script defer src="/assets/app.js"></script>
+<script defer>
+document.addEventListener('DOMContentLoaded', ()=>{ try{ initBooking(); }catch(e){} });
+</script>
+</head>
+<body>
+  
+<div class="nav">
+  <div class="container inner">
+    <div class="brand"><div class="logo"></div><a href="/index.html"><span id="brandName">Blue Mountains Smart Homes</span></a></div>
+    <div class="links">
+      <a href="/about.html">About</a>
+      <a href="/features.html">Features</a>
+      <a href="/properties.html">Stays</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta" href="/booking.html">Book Direct</a>
+    </div>
+  </div>
+</div>
+
+  
+<section class="section container">
+  <h2>Request to Book</h2>
+  <p class="small">Best rates direct. Submit the form and we’ll confirm availability and send a Stripe checkout link.</p>
+  <div id="bookingHelp" style="margin:8px 0 12px"></div>
+  <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="grid two">
+    <input type="hidden" name="form-name" value="booking">
+    <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+    <div><label>Full name<input name="name" required></label></div>
+    <div><label>Email<input type="email" name="email" required></label></div>
+    <div><label>Phone<input name="phone" required></label></div>
+    <div><label>Property
+      <select name="property">
+        <option value="wollemi-smart-palace">The Wollemi Smart Palace</option>
+        <option value="smart-retreat">The Smart Retreat</option>
+      </select></label>
+    </div>
+    <div><label>Check-in<input type="date" name="checkin" required></label></div>
+    <div><label>Check-out<input type="date" name="checkout" required></label></div>
+    <div class="formgrid" style="grid-column:1/-1">
+      <label>Guests<input type="number" name="guests" min="1" max="6" value="2"></label>
+      <label>Pets<select name="pets"><option>No</option><option>Yes</option></select></label>
+    </div>
+    <div style="grid-column:1/-1"><label>Notes<textarea name="notes" rows="4" placeholder="Anything we should know?"></textarea></label></div>
+    <div class="cta-row" style="grid-column:1/-1">
+      <button class="btn primary" type="submit">Submit Request</button>
+      <a class="btn ghost" href="/contact.html">Questions?</a>
+    </div>
+  </form>
+</section>
+
+  
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modalImg" alt="Preview">
+</div>
+
+  <div class="footer container">
+    © 2025 Blue Mountains Smart Homes · Katoomba NSW · ABN pending · Powered by Netlify · <a href="/admin/">Site Admin</a>
+  </div>
+</body>
+</html>

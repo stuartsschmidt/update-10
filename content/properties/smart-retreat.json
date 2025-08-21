@@ -1,0 +1,60 @@
+{
+  "name": "The Smart Retreat",
+  "slug": "smart-retreat",
+  "short_description": "Peaceful, tech-forward Blue Mountains escape with Google voice control, smart TVs, and pet-ready spaces.",
+  "long_description": "A serene escape tailored for ease: voice-control the essentials, unwind with streaming-ready smart TVs, and enjoy cosy, smart-lit evenings.",
+  "location": "Katoomba, Blue Mountains \u00b7 NSW",
+  "capacity": 6,
+  "bedrooms": "3 bedrooms",
+  "bathrooms": "2 bathrooms",
+  "parking": "Driveway (free)",
+  "amenities": [
+    "Smart TVs in all bedrooms and lounge",
+    "Back verandah for outdoor dining",
+    "Garden lighting for evening ambience",
+    "Pet-friendly area",
+    "Coffee stations (multiple)",
+    "Professional linen & towels (Access Linen)"
+  ],
+  "smart_features": [
+    "Google Minis in each room",
+    "Room-by-room lighting scenes",
+    "Streaming voice commands (YouTube, Netflix, volume, channel)",
+    "Curtains & blinds where available"
+  ],
+  "house_rules": [
+    "Strictly 6 guests; no additional visitors.",
+    "No parties; quiet hours 10 PM\u20138 AM.",
+    "Smoking outdoors only\u2014use ashtrays."
+  ],
+  "wifi": {
+    "ssid": "Wally's house",
+    "password": "meet wally"
+  },
+  "emergency": {
+    "contacts": "Stuart Schmidt & Lina Sun",
+    "phones": "0414 366 815, 0412 188 947",
+    "hospital": "Katoomba, NSW 2780"
+  },
+  "booking": {
+    "stripe_payment_link": ""
+  },
+  "gallery": [
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=Retreat+Lounge",
+      "alt": "Lounge room with smart TV"
+    },
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=Bedroom+Smart+TV",
+      "alt": "Bedroom with smart TV"
+    },
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=Outdoor+Dining",
+      "alt": "Outdoor dining area on verandah"
+    },
+    {
+      "src": "https://placehold.co/1200x800/jpg?text=Garden+Lights",
+      "alt": "Garden lighting for evening ambience"
+    }
+  ]
+}

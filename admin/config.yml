@@ -1,0 +1,99 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/img"
+public_folder: "/img"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "settings"
+    label: "Settings"
+    files:
+      - file: "content/site.json"
+        label: "Site Settings"
+        name: "site"
+        fields:
+          - {label: "Site Name", name: "siteName", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Phone Primary", name: "phone1", widget: "string"}
+              - {label: "Phone Secondary", name: "phone2", widget: "string"}
+      - file: "content/home.json"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtitle", name: "hero_subtitle", widget: "text"}
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            field: {label: "Highlight", name: "text", widget: "string"}
+      - file: "content/properties/index.json"
+        label: "Properties Index"
+        name: "properties_index"
+        fields:
+          - label: "Slugs"
+            name: "slugs"
+            widget: "list"
+            field: {label: "Slug", name: "slug", widget: "string"}
+  - name: "properties"
+    label: "Properties"
+    folder: "content/properties"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    identifier_field: "name"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Short Description", name: "short_description", widget: "text"}
+      - {label: "Long Description", name: "long_description", widget: "text"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Capacity", name: "capacity", widget: "number", value_type: "int"}
+      - {label: "Bedrooms", name: "bedrooms", widget: "string"}
+      - {label: "Bathrooms", name: "bathrooms", widget: "string"}
+      - {label: "Parking", name: "parking", widget: "string", default: "Driveway"}
+      - label: "Amenities"
+        name: "amenities"
+        widget: "list"
+        field: {label: "Amenity", name: "text", widget: "string"}
+      - label: "Smart Features"
+        name: "smart_features"
+        widget: "list"
+        field: {label: "Feature", name: "text", widget: "string"}
+      - label: "House Rules"
+        name: "house_rules"
+        widget: "list"
+        field: {label: "Rule", name: "text", widget: "string"}
+      - label: "WiFi"
+        name: "wifi"
+        widget: "object"
+        fields:
+          - {label: "SSID", name: "ssid", widget: "string"}
+          - {label: "Password", name: "password", widget: "string"}
+      - label: "Emergency"
+        name: "emergency"
+        widget: "object"
+        fields:
+          - {label: "Contact Name(s)", name: "contacts", widget: "string"}
+          - {label: "Phone(s)", name: "phones", widget: "string"}
+          - {label: "Nearest Hospital", name: "hospital", widget: "string"}
+      - label: "Booking"
+        name: "booking"
+        widget: "object"
+        fields:
+          - {label: "Stripe Payment Link (optional)", name: "stripe_payment_link", widget: "string", required: false}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "src", widget: "image"}
+          - {label: "Alt Text", name: "alt", widget: "string"}
