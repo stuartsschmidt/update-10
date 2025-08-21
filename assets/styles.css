@@ -69,4 +69,5 @@ p{margin:0 0 12px 0}
 input,select,textarea{width:100%;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(2,6,23,.6);color:var(--text)}
 label{font-size:14px;color:#cbd5e1}
 .formgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:18px 0}
+hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:18px 0} .fig.edge { border: none; border-radius: 0; }
+

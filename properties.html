@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{ try{ initProperty(); }catch(
 </script>
 </head>
 <body>
-  
+
 <div class="nav">
   <div class="container inner">
     <div class="brand"><div class="logo"></div><a href="/index.html"><span id="brandName">Blue Mountains Smart Homes</span></a></div>
@@ -32,21 +32,28 @@ document.addEventListener('DOMContentLoaded', ()=>{ try{ initProperty(); }catch(
   </div>
 </div>
 
-  
 <section class="section container">
-  <h2 id="propName">Stay</h2>
+  <a href="/properties.html" class="small">← Back to Stays</a>
+  <h1 id="propName">Stay</h1>
   <div id="propMeta" class="small" style="margin-bottom:10px"></div>
-  <div id="wifi" class="small" style="margin:10px 0 16px"></div>
+
+  <!-- Wi-Fi placeholder (safe even if JS is disabled) -->
+  <div id="wifi" class="small" style="margin:10px 0 16px">
+    <noscript>
+      <div class="card"><strong>Wi-Fi:</strong> Available at the property. <em>Login details are provided after booking.</em></div>
+    </noscript>
+  </div>
+
   <div id="propDesc"></div>
 </section>
 
 <section class="section container grid two">
   <div class="card">
-    <h3>Smart Features</h3>
+    <h2>Smart Features</h2>
     <ul id="propSmart"></ul>
   </div>
   <div class="card">
-    <h3>Amenities</h3>
+    <h2>Amenities</h2>
     <ul id="propAmenities"></ul>
   </div>
 </section>
@@ -54,6 +61,10 @@ document.addEventListener('DOMContentLoaded', ()=>{ try{ initProperty(); }catch(
 <section class="section container">
   <h2>House Rules</h2>
   <ul id="propRules"></ul>
+
+  <!-- Gated manual button injected by app.js -->
+  <div id="manualButton" class="cta-row"></div>
+
   <div id="bookButtons" class="cta-row"></div>
 </section>
 
@@ -62,13 +73,12 @@ document.addEventListener('DOMContentLoaded', ()=>{ try{ initProperty(); }catch(
   <div id="gallery" class="gallery"></div>
 </section>
 
-  
 <div id="modal" class="modal" onclick="closeModal()">
   <img id="modalImg" alt="Preview">
 </div>
 
-  <div class="footer container">
-    © 2025 Blue Mountains Smart Homes · Katoomba NSW · ABN pending · Powered by Netlify · <a href="/admin/">Site Admin</a>
-  </div>
+<div class="footer container">
+  © 2025 Blue Mountains Smart Homes · Katoomba NSW · ABN pending · Powered by Netlify · <a href="/admin/">Site Admin</a>
+</div>
 </body>
 </html>

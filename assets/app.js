@@ -1,4 +1,3 @@
-
 // Basic client-side renderer for JSON content managed by Decap CMS
 async function loadJSON(path){
   const res = await fetch(path, {cache: 'no-store'});
@@ -49,6 +48,13 @@ async function initHome(){
 async function initProperty(){
   const url = new URL(location.href);
   const slug = url.searchParams.get('slug') || 'wollemi-smart-palace';
+
+  // Set brand name on this page too (for consistency)
+  try {
+    const site = await loadJSON('/content/site.json');
+    setText('brandName', site.siteName);
+  } catch (e) { /* non-blocking */ }
+
   const p = await loadJSON(`/content/properties/${slug}.json`);
   setText('propName', p.name);
   setHTML('propMeta', `<div class="chips">
@@ -58,14 +64,47 @@ async function initProperty(){
   setHTML('propSmart', p.smart_features.map(f => `<li>${f}</li>`).join(''));
   setHTML('propAmenities', p.amenities.map(f => `<li>${f}</li>`).join(''));
   setHTML('propRules', p.house_rules.map(f => `<li>${f}</li>`).join(''));
-  // WiFi
-  setHTML('wifi', `<div class="card"><strong>Wi‑Fi:</strong> ${p.wifi.ssid} &nbsp;|&nbsp; Password: ${p.wifi.password}</div>`);
+
+  // Wi-Fi — always hide real credentials on the public site
+  setHTML('wifi', `<div class="card"><strong>Wi-Fi:</strong> Available at the property. <em>Login details are provided after booking.</em></div>`);
+
+  // House Manual button (gated for guests via Netlify Identity)
+  const mb = document.getElementById('manualButton');
+  if (mb) {
+    if (p.manual && p.manual.url) {
+      mb.innerHTML = `<button class="btn ghost" id="openManual">House Manual (guests)</button>`;
+      const openBtn = mb.querySelector('#openManual');
+
+      // helper: check Netlify Identity current user
+      const currentUser = () => {
+        return (window.netlifyIdentity &&
+                typeof window.netlifyIdentity.currentUser === 'function' &&
+                window.netlifyIdentity.currentUser());
+      };
+
+      openBtn.addEventListener('click', () => {
+        const user = currentUser();
+        if (user) {
+          // logged in → open manual
+          location.href = p.manual.url;
+        } else {
+          // not logged in → go to guest login then redirect back
+          const next = encodeURIComponent(p.manual.url);
+          location.href = `/guest.html?next=${next}`;
+        }
+      });
+    } else {
+      mb.innerHTML = `<span class="muted small">House manual available to guests after booking.</span>`;
+    }
+  }
+
   // Gallery
   const g = document.getElementById('gallery');
   g.innerHTML = p.gallery.map(img => `<img src="${img.src}" alt="${img.alt}" loading="lazy" onclick="openModal('${img.src}')">`).join('');
+
   // Book buttons
   const bb = document.getElementById('bookButtons');
-  const pay = p.booking.stripe_payment_link || '#';
+  const pay = (p.booking && p.booking.stripe_payment_link) ? p.booking.stripe_payment_link : '#';
   bb.innerHTML = `
     <a class="btn primary" href="/booking.html?slug=${encodeURIComponent(p.slug)}">Request to Book</a>
     <a class="btn ghost" ${pay!=='#' ? `href="${pay}"` : ''}>${pay!=='#'?'Instant Checkout':'Instant Checkout (set Stripe Link)'}</a>

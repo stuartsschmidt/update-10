@@ -1,9 +1,10 @@
+
 {
   "name": "The Smart Retreat",
   "slug": "smart-retreat",
   "short_description": "Peaceful, tech-forward Blue Mountains escape with Google voice control, smart TVs, and pet-ready spaces.",
   "long_description": "A serene escape tailored for ease: voice-control the essentials, unwind with streaming-ready smart TVs, and enjoy cosy, smart-lit evenings.",
-  "location": "Katoomba, Blue Mountains \u00b7 NSW",
+  "location": "Katoomba, Blue Mountains · NSW",
   "capacity": 6,
   "bedrooms": "3 bedrooms",
   "bathrooms": "2 bathrooms",
@@ -24,12 +25,16 @@
   ],
   "house_rules": [
     "Strictly 6 guests; no additional visitors.",
-    "No parties; quiet hours 10 PM\u20138 AM.",
-    "Smoking outdoors only\u2014use ashtrays."
+    "No parties; quiet hours 10 PM–8 AM.",
+    "Smoking outdoors only—use ashtrays."
   ],
   "wifi": {
-    "ssid": "Wally's house",
-    "password": "meet wally"
+    "ssid": "Provided after booking",
+    "password": "Provided after booking"
+  },
+  "manual": {
+    "url": "/manuals/retreat-house-manual.pdf",
+    "access": "Provided after booking"
   },
   "emergency": {
     "contacts": "Stuart Schmidt & Lina Sun",
@@ -40,21 +45,22 @@
     "stripe_payment_link": ""
   },
   "gallery": [
-    {
-      "src": "https://placehold.co/1200x800/jpg?text=Retreat+Lounge",
-      "alt": "Lounge room with smart TV"
-    },
-    {
-      "src": "https://placehold.co/1200x800/jpg?text=Bedroom+Smart+TV",
-      "alt": "Bedroom with smart TV"
-    },
-    {
-      "src": "https://placehold.co/1200x800/jpg?text=Outdoor+Dining",
-      "alt": "Outdoor dining area on verandah"
-    },
-    {
-      "src": "https://placehold.co/1200x800/jpg?text=Garden+Lights",
-      "alt": "Garden lighting for evening ambience"
-    }
+    { "src": "/img/retreat/retreat%20bunk%20beds.jpg", "alt": "Kids’ room with bunk beds, plush toys, and smart lighting accents." },
+    { "src": "/img/retreat/retreat%20coffee.jpg", "alt": "Kitchen coffee station with SMEG appliances and pod machine." },
+    { "src": "/img/retreat/retreat%20dining.jpg", "alt": "Dining area with glass table, modern chairs, and Blue Mountains mural." },
+    { "src": "/img/retreat/retreat%20ensuite.jpg", "alt": "Modern ensuite bathroom with hairdryer, mirror, and tiled shower." },
+    { "src": "/img/retreat/retreat%20jet%20bath.jpg", "alt": "Spa bath with built-in jets, bamboo tray, and relaxing setup." },
+    { "src": "/img/retreat/retreat%20kids%20room.jpg", "alt": "Family bedroom with bunk beds and two single beds, bright and spacious." },
+    { "src": "/img/retreat/retreat%20king%20bedroom.jpg", "alt": "Master king bedroom with desk, seating, and garden views." },
+    { "src": "/img/retreat/retreat%20kitchen.jpg", "alt": "Open-plan kitchen with black tiled backsplash, island seating, and large windows." },
+    { "src": "/img/retreat/retreat%20large%20serving%20window.jpg", "alt": "Large kitchen servery window to verandah with grazing board and drinks." },
+    { "src": "/img/retreat/retreat%20lounge.jpg", "alt": "Spacious lounge with recliner sofa, bookshelves, and sliding doors to deck." },
+    { "src": "/img/retreat/retreat%20lounge1.jpg", "alt": "Lounge from alternate angle featuring smart TV and airy ceilings." },
+    { "src": "/img/retreat/retreat%20main%20bathroom.jpg", "alt": "Main bathroom with walk-in shower, bath, and contemporary fixtures." },
+    { "src": "/img/retreat/retreat%20night%20back%20yard.jpg", "alt": "Cosy fenced pet area lit with fairy lights at dusk." },
+    { "src": "/img/retreat/retreat%20night%20front%20garden.jpg", "alt": "Front garden and pathways glowing with colourful evening lighting." },
+    { "src": "/img/retreat/retreat%20projector.jpg", "alt": "Drop-down projector screen in lounge for cinema nights." },
+    { "src": "/img/retreat/retreat%20queen%20room.jpg", "alt": "Queen bedroom with warm bedding and garden outlook." },
+    { "src": "/img/retreat/retreat%20veranda.jpg", "alt": "Back verandah and landscaped garden lit up at sunset with colourful lights." }
   ]
 }

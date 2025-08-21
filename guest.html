@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Guest Access – Blue Mountains Smart Homes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <!-- Netlify Identity widget -->
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="container section">
+  <h1>Guest Access</h1>
+  <p>Log in with the email we invited for your booking to view the house manual.</p>
+
+  <div class="cta-row">
+    <button class="btn primary" id="loginBtn">Log in / Sign up</button>
+    <a class="btn ghost" href="/">Back to Home</a>
+  </div>
+
+  <script>
+    // Where to go after login
+    const params = new URLSearchParams(location.search);
+    const next = params.get('next') || '/';
+    const goNext = () => location.href = next;
+
+    // Open the Netlify Identity modal
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      netlifyIdentity.open('login');
+    });
+
+    // If already logged in, go straight to the manual
+    netlifyIdentity.on('init', user => { if (user) goNext(); });
+    netlifyIdentity.on('login', user => { if (user) { netlifyIdentity.close(); goNext(); } });
+  </script>
+</body>
+</html>
