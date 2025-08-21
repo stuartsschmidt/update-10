@@ -1,0 +1,73 @@
+{
+  "name": "The Wollemi Smart Palace",
+  "slug": "wollemi-smart-palace",
+  "short_description": "One-story, no-step entry. Honeymoon-ready smart haven with spa room, mood lighting, and rare Wollemi pines.",
+  "long_description": "The Wollemi Smart Palace blends Blue Mountains tranquility with playful, voice-driven comfort. Control showers, lighting, curtains, and more from bed. Please admire the nine Wollemi pines from the paths—garden beds are off-limits to protect these endangered trees.",
+  "location": "Katoomba, Blue Mountains · NSW",
+  "capacity": 6,
+  "bedrooms": "3 bedrooms (1 king, 1 queen, 2 singles)",
+  "bathrooms": "2 ensuites",
+  "parking": "Driveway (free)",
+  "amenities": [
+    "Spa room (indoor)",
+    "Laundry in spa room",
+    "Four smart TVs (85” lounge)",
+    "Queen TV bed (not via Google; separate controls)",
+    "Two single electric lift beds",
+    "Motion-sensor taps in every sink",
+    "Back verandah with BBQ & rotisserie (not voice-controlled; verandah light voice commands usable indoors only)",
+    "Free driveway parking",
+    "Pet area (up to 2 pets)"
+  ],
+  "smart_features": [
+    "Google Minis in each room",
+    "Voice-controlled showers (King/Queen ensuites: on/off)",
+    "Voice-controlled curtains in King room",
+    "Mood lighting presets in spa room",
+    "Coloured path lighting in gardens (no garden bed access)",
+    "Lights, blinds, scenes per room",
+    "Sample commands: “Hey Google, turn on King Shower”, “Hey Google, open the curtains”"
+  ],
+  "house_rules": [
+    "Strictly 6 guests; no additional visitors (external cameras monitor guest numbers).",
+    "No parties. Quiet hours 10 PM–8 AM.",
+    "Smoking outdoors only—use ashtrays.",
+    "Spa & BBQ must be off and covered when not in use and at checkout.",
+    "Do not unplug devices; keep remotes in original locations.",
+    "Lucci/Addtam bedside power boards are for charging only. Plug hair dryers into wall outlets.",
+    "Do not manually move electric recliners."
+  ],
+  "wifi": { "ssid": "Provided after booking", "password": "Provided after booking" },
+  "manual": { "url": "/manuals/palace-house-manual.pdf", "access": "Provided after booking" },
+  "emergency": {
+    "contacts": ["Stuart Schmidt", "Lina Sun"],
+    "phones": ["0414366815", "0412188947"],
+    "hospital": "Katoomba, NSW 2780"
+  },
+  "booking": { "stripe_payment_link": "" },
+  "gallery": [
+    { "src": "/img/palace/palace-6-person-private-spa-spa-room.jpg", "alt": "Private spa room with 6-person spa and mood lighting." },
+    { "src": "/img/palace/palace-back-entrance.jpg", "alt": "Back entrance with easy no-step access." },
+    { "src": "/img/palace/palace-back-verandah-bbq-wood-fire-slow-cooker.jpg", "alt": "Back verandah with BBQ and wood fire slow cooker." },
+    { "src": "/img/palace/palace-coffee-kitchen-dining.jpg", "alt": "Kitchen coffee station and dining table setup." },
+    { "src": "/img/palace/palace-courtyard-fire-pit-back-garden.jpg", "alt": "Courtyard fire pit in the landscaped back garden." },
+    { "src": "/img/palace/palace-dining-kitchen-table-for-6.jpg", "alt": "Dining table set for six guests beside the kitchen." },
+    { "src": "/img/palace/palace-dog-play-area.jpg", "alt": "Fenced dog play area for pets." },
+    { "src": "/img/palace/palace-drone-view-2.jpg", "alt": "Drone view of the Wollemi Smart Palace and gardens." },
+    { "src": "/img/palace/palace-endangered-wollemi-pine-trees-back-garden.jpg", "alt": "Rare endangered Wollemi pine trees in the back garden." },
+    { "src": "/img/palace/palace-fire-courtyard.jpg", "alt": "Cosy fire courtyard for outdoor evenings." },
+    { "src": "/img/palace/palace-front.jpg", "alt": "Front view of the Wollemi Smart Palace." },
+    { "src": "/img/palace/palace-jester-room-bed-2.jpg", "alt": "The Jester Room with twin electric lift beds and smart TV." },
+    { "src": "/img/palace/palace-jester-room-bed-1.jpg", "alt": "The Jester Room second bed with colourful bedding." },
+    { "src": "/img/palace/palace-king-room-king-bed.jpg", "alt": "King bedroom with large bed and smart curtain controls." },
+    { "src": "/img/palace/palace-king-room.jpg", "alt": "Another view of the king bedroom with smart lighting." },
+    { "src": "/img/palace/palace-kitchen-and-dining.jpg", "alt": "Open-plan kitchen and dining with modern appliances." },
+    { "src": "/img/palace/palace-queen-bedroom-tv-bed.jpg", "alt": "Queen bedroom with TV bed raised." },
+    { "src": "/img/palace/palace-queen-room-tv-bed-closed.jpg", "alt": "Queen bedroom with TV bed closed." },
+    { "src": "/img/palace/palace-spa-rules-spa-room.jpg", "alt": "Spa room with posted spa rules for guests." },
+    { "src": "/img/palace/palace-spa-washing-machine-and-dryer-combo-spa-room.jpg", "alt": "Laundry facilities in the spa room: washer-dryer combo." },
+    { "src": "/img/palace/palace-wally-the-saurus-garden.jpg", "alt": "Garden feature with 'Wally the Saurus' dinosaur statue." },
+    { "src": "/img/palace/palace-wood-fire-slow-cooker-verandah.jpg", "alt": "Back verandah with wood fire slow cooker in use." },
+    { "src": "/img/palace/palace-wood-fire-slow-cooker.jpg", "alt": "Close-up of wood fire slow cooker." }
+  ]
+}
